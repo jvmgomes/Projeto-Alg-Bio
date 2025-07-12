@@ -1,0 +1,46 @@
+Resumo geral:
+Investigar e discutir como a variabilidade genética viral pode impactar no
+ contexto específico do vírus analisado. Essa análise deve levar em conta a 
+ identificação dos nucleotídeos e suas relações, da variabilidade através de 
+ técnicas de alinhamento (Needleman-Wunsch e Smith Waterman) e das informações 
+ que podem ser extraídas dessas técnicas (regiões conservadas, regiões variáveis, 
+ Temperatura de Melting, etc).
+Conjunto de dados: AY423387.1, AY423388.1, AB253429.1, AF004456, K03455.1
+
+Etapas:
+Bia - Baixar o arquivo FASTA das sequências e desenvolver um código que realiza a 
+leitura das informações contidas no arquivo. 
+o código deve identificar cabeçalho e sequência de nucleotídeos e armazenar essas 
+informações em um dicionário ( {chave : elemento} ).
+
+Sarah - Fazer uma descrição das informações (organismo e origem) contidas no arquivo 
+FASTA e desenvolver um código que mostre o tamanho de cada sequência contida no arquivo.
+
+JV - Criar um código que calcule a frequência de cada nucleotídeo em determinada sequência, 
+montar um gráfico de barras (Matplotlib) com as frequências de nucleotídeos de todas as 
+sequências do registro, organizadas em ordem alfabética, e extrair informações disso.
+Há diferenças nas frequências entre as sequências do vírus que seu grupo analisou?
+Qual poderia ser o motivo destas diferenças, considerando o contexto de variabilidade viral 
+(serotipos, origem geográfica, ano de isolamento, etc)?
+o contexto do vírus determina quais dessas características deve-se levar em consideração.
+
+Jade - Criar um código que calcule o conteúdo GC de determinada sequência e que, com base 
+nisso, calcule a Temperatura de Melting (Tm) de cada sequência, e discutir a importância da 
+Tm para o PCR, especialmente no diagnóstico ou caracterização de sequências virais.
+A escolha do método para o cálculo da Tm fica a cargo do grupo, mas deve ser justificado.
+
+Gabriel - Criar um código que realize o alinhamento global dos 300 primeiros nucleotídeos 
+das sequências, retornando o alinhamento ótimo, score e similaridade, e fazer uma análise sucinta 
+dos resultados.
+A análise deve identificar se há regiões altamente conservadas ou variáveis e o que isso diz sobre 
+o vírus analisado.
+
+Gabriel - Mesma coisa da etapa anterior, mas agora para o alinhamento local.
+A análise deve comparar e discutir os resultados do alinhamento global com o do local, 
+identificando as regiões em que o alinhamento local destacou que o global não evidenciou, e 
+em que situações cada tipo de alinhamento é mais adequado para a análise.
+
+Vini - Criar um código que simule a tradução de uma sequência de nucleotídeos e construir um gráfico 
+de barras com a frequência dos aminoácidos traduzidos para cada sequência.
+A tradução deve começar no primeiro nucleotídeo e parar ou no primeiro códon de parada ou no final da 
+sequência.
