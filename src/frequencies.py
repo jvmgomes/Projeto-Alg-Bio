@@ -1,4 +1,4 @@
-# aqui é calculada a frequencia de nucleotideos do arquivo hiv1
+# aqui é calculada a frequencia de nucleotideos dos arquivos e importados para frequencies.csv
 
 def calculo(seq):
     A = seq.count('A')
